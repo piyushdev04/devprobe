@@ -86,4 +86,38 @@ go build -o devprobe ./cmd
 - Probe times, load test stats, and derived metrics are returned for display or further processing.
 ![alt text](image.png)
 ---
+#### devprobe Cheat Sheet
+1. Basic probe
+```bash
+./devprobe https://example.com
+```
+2. Load test with concurrency & total requests
+```bash
+./devprobe -c 20 -n 100 https://example.com
+```
+3. Set timeout per request
+```bash
+./devprobe -timeout 3s https://example.com
+```
+4. Retry on failure
+```bash
+./devprobe -retries 2 https://example.com
+```
+5. Combine concurrency, load, timeout, retries
+```bash
+./devprobe -c 20 -n 100 -timeout 3s -retries 2 https://example.com
+```
+6. Interactive TUI (Terminal UI)
+```bash
+./devprobe -tui https://example.com
+```
+7. TUI + load test + timeout + retries
+```bash
+./devprobe -tui -c 20 -n 100 -timeout 3s -retries 2 https://example.com
+```
+8. On Windows PowerShell, prefix with .\ if running in current folder:
+```bash
+.\devprobe.exe -tui -c 20 -n 100 https://example.com
+```
+---
 ## THANKS FOR READING!!!❄️
