@@ -84,6 +84,6 @@ go build -o devprobe ./cmd
 
 9. Output
 - Probe times, load test stats, and derived metrics are returned for display or further processing.
-
+![alt text](image.png)
 ---
 ## THANKS FOR READING!!!❄️
