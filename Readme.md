@@ -115,9 +115,5 @@ go build -o devprobe ./cmd
 ```bash
 ./devprobe -tui -c 20 -n 100 -timeout 3s -retries 2 https://example.com
 ```
-8. On Windows PowerShell, prefix with .\ if running in current folder:
-```bash
-.\devprobe.exe -tui -c 20 -n 100 https://example.com
-```
 ---
 ## THANKS FOR READING!!!❄️
